@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bfynnr5ntbkbr"]
+
+[ext_resource type="Script" path="res://scenes/bullet.gd" id="1_fnk2m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_riosa"]
+size = Vector2(3, 3)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2ak42"]
+size = Vector2(3, 3)
+
+[node name="Bullet" type="Area2D"]
+script = ExtResource("1_fnk2m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_riosa")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_2ak42")
